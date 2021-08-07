@@ -1,0 +1,158 @@
+*{
+        margin: 0%;
+        padding: 0%;
+    }
+    
+#main-title{
+        font-size: 36px;
+        font-family:'Didot', Georgia, serif;
+        margin: 50px;
+        text-align: center;
+      /*  text-decoration: overline;*/
+    }
+
+#main-title:hover{
+        color: blue;
+
+}
+
+.titre-nouvelle{
+        font-size: 26px;
+        font-family: 'Didot', Georgia, serif;
+        font-style: italic;
+        line-height: 2;
+    }
+
+.auteur-trice{
+        font-size: 12px;
+        font-family: 'Didot', Georgia, serif;
+        font-weight: bold;
+        text-transform: uppercase;
+    
+    }
+
+.boite-nouvelle{
+        width: 90vw;
+        height: 90vw;
+        background-color: white;
+        border: 1px solid black;
+        margin: 10px;
+        padding: 20px;
+        overflow: scroll;
+    }
+
+.corps{
+        font-size: 12px;
+        font-family: 'Big Caslon', Georgia, serif;
+        text-align: justify;
+        letter-spacing: 1px;
+    }
+
+.img{
+        width: 300px;
+        height: auto;
+        
+    }
+
+a{
+        font-size: 26px;
+        font-family: 'Didot', Georgia, serif;
+        font-style: italic;
+        line-height: 2;
+        text-decoration: none;
+        color: black;
+    }
+
+a:hover{
+        font-family: 'Didot';
+        color: rgb(100,100,100);
+        font-style: normal;
+    }
+
+a:active{
+        color: rgb(150,12,12)
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    }        
+
+#menu li{
+        display: inline;
+    }
+
+
+#aléatoire{
+        font-size: 22px;
+        font-family: 'Didot', Georgia, serif;
+        font-style: italic;
+        line-height: 2;
+        text-decoration: none;
+        color: black;
+}
+
+#aléatoire:hover{
+    font-family: 'Didot';
+        color: rgb(100,100,100);
+        font-style: normal;
+
+} 
+#aléatoire:active{
+    color: rgb(150,12,12)
+}
+
+main{ 
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 1f 1fr 1fr 1fr; */
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  } 
+  
+  figure{
+    width: auto;
+  }
+  
+  img{
+    width: 100%;
+  }
+
+    /* PARENT */
+
+#bigbox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80vw;
+    height: 600px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    overflow: scroll;
+
+}
+
+
+/* CHILDREN */
+.box-green{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(178, 197, 178);
+    opacity: 70%;
+    margin: 10px;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
